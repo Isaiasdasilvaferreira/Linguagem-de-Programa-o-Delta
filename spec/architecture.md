@@ -1,6 +1,6 @@
 # DELTA: Arquitetura do Sistema
 
-A arquitetura do DELTA é estruturada como um interpretador REPL (Read-Eval-Print Loop) modular focado em operações de cibersegurança, criptografia e rede. O sistema adota um modelo de execução baseado em estado global seguro e Controle de Acesso Baseado em Papéis (RBAC).
+A arquitetura da DELTA é estruturada como um interpretador REPL (Read-Eval-Print Loop) modular focado em operações de cibersegurança, criptografia e rede. O sistema adota um modelo de execução baseado em estado global seguro e Controle de Acesso Baseado em Papéis (RBAC).
 
 ## Componentes Principais
 
