@@ -1,4 +1,4 @@
-# DELTA: Formal Grammar
+# DELTA: Gramática Formal
 
 ## Regras Sintáticas
 
