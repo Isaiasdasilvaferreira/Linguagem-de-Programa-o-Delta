@@ -1,4 +1,4 @@
-# DELTA: Language Syntax & Usage Guide
+# DELTA: Guia de Sintaxe e Uso da Linguagem
 
 A linguagem DELTA opera através de comandos diretos projetados para clareza operacional. Todos os argumentos textuais ou caminhos de arquivos devem ser envoltos em aspas duplas (`""`).
 
