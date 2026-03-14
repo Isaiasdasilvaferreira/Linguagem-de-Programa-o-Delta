@@ -1,6 +1,6 @@
 # DELTA: Arquitetura do Sistema
 
-A arquitetura da DELTA é estruturada como um interpretador REPL (Read-Eval-Print Loop) modular focado em operações de cibersegurança, criptografia e rede. O sistema adota um modelo de execução baseado em estado global seguro e Controle de Acesso Baseado em Papéis (RBAC).
+A arquitetura do DELTA é estruturada como um interpretador REPL (Read-Eval-Print Loop) modular focado em operações de cibersegurança, criptografia e rede. O sistema adota um modelo de execução baseado em estado global seguro e Controle de Acesso Baseado em Papéis (RBAC).
 
 ## Componentes Principais
 
@@ -15,7 +15,7 @@ A arquitetura da DELTA é estruturada como um interpretador REPL (Read-Eval-Prin
 * **Submódulos de Domínio:**
     * `crypto.rs`: Implementa criptografia simétrica (AES256) com padding PKCS7, além de hashing (SHA256). Manipula IO de arquivos diretos.
     * `network.rs`: Estabelece e gerencia túneis TLS e mTLS usando `tokio-rustls`, suportando validação de certificados locais.
-    * `scanner.rs`: (Em desenvolvimento) Responsável por varreduras de portas e de rede.
+    * `scanner.rs`: Implementa operações de reconhecimento de rede de alta performance. Utiliza a runtime assíncrona do `tokio` para despachar dezenas de threads simultâneas (`tokio::spawn`), testando sockets TCP com um timeout estrito de 200ms para garantir eficiência na varredura de sub-redes e portas.
 
 ## Fluxo de Execução (Pipeline)
 
