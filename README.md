@@ -33,4 +33,4 @@ Engenharia de Software de Missão Crítica: Aplicações em setores médico, aer
 
 # Autor
 
-Isaias da Silva Ferreira CEO & CTO na NwareLink Desenvolvedor Full Stack especializado em sistemas escaláveis e alta performance
+Isaias da Silva Ferreira CEO e CTO da NwareLink, startup de desenvolvimento de software. Pai e engenheiro da Delta. Estudante de Desenvolvimento de Sistemas na ETEC de Itaquaquecetuba.
