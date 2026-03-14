@@ -1,6 +1,6 @@
-# DELTA: Gramática Formal
+# DELTA: Formal Grammar
 
-A gramática do DELTA é linear e baseada em comandos iniciados por palavras-chave específicas. Abaixo está a representação EBNF deduzida do `parser.rs`.
+A gramática do DELTA é baseada em comandos iniciados por palavras-chave específicas. Abaixo está a representação EBNF.
 
 ## Regras Sintáticas
 
@@ -34,8 +34,8 @@ A gramática do DELTA é linear e baseada em comandos iniciados por palavras-cha
 
 ## Terminais Essenciais
 
-<Algorithm> ::= "AES256" | "SHA256" | "RSA" | "ECC"
-<ChannelParams> ::= { <StringLiteral> }  /* Aceita literais no formato "host(...)", "port(...)", "cert(...)", "mutual_tls(...)" */
+<Algorithm>     ::= "AES256" | "SHA256" | "RSA" | "ECC"
+<ChannelParams> ::= { <StringLiteral> }  /* host(...), port(...), cert(...), mutual_tls(...) */
 <StringLiteral> ::= "\"" <Text> "\""
-<Identifier> ::= [a-zA-Z_][a-zA-Z0-9_]*
-<Number> ::= [0-9]+
+<Identifier>    ::= [a-zA-Z_][a-zA-Z0-9_]*
+<Number>        ::= [0-9]+
