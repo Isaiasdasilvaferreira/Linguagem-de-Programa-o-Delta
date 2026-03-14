@@ -1,0 +1,11 @@
+// Exemplo de varredura de rede simples
+scan network "192.168.1.0/24"
+
+// Exemplo de atribuição de variável (parse_assign)
+let target = "10.0.0.1"
+
+// Exemplo de varredura de portas no host definido (parse_scan com 'ports')
+scan ports "10.0.0.1"
+
+// Exemplo de log do sistema (parse_log)
+log "Varredura de rede finalizada no alvo especificado."
