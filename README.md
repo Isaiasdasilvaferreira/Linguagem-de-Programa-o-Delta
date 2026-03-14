@@ -1,9 +1,6 @@
 # Delta: Arquitetura e Implementação de uma Linguagem Estritamente Segura para Sistemas Críticos
 
-Refinando o documento para concentrar o rigor técnico exclusivamente na camada de software e na integridade lógica da linguagem, aqui está a versão final do README para o seu repositório.
-
-Delta: Arquitetura e Implementação de uma Linguagem Estritamente Segura para Sistemas Críticos
-O Delta é uma linguagem de programação de sistemas desenvolvida para operar com desempenho de baixo nível enquanto impõe garantias absolutas de segurança em nível de software. Projetada para ambientes de missão crítica, a linguagem atua como uma barreira técnica contra comportamentos indefinidos e vulnerabilidades lógicas que comprometem a integridade de infraestruturas onde o erro operacional é intolerável.
+A Delta é uma linguagem de programação de sistemas desenvolvida para operar com desempenho de baixo nível enquanto impõe garantias absolutas de segurança em nível de software. Projetada para ambientes de missão crítica, a linguagem atua como uma barreira técnica contra comportamentos indefinidos e vulnerabilidades lógicas que comprometem a integridade de infraestruturas onde o erro operacional é intolerável.
 
 # Vetores de Proteção e Robustez de Software
 A arquitetura do Delta estabelece um protocolo de segurança rigoroso focado na estabilidade da execução e na integridade dos dados:
