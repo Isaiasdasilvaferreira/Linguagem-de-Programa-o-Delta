@@ -3,7 +3,7 @@
 A linguagem DELTA opera através de comandos diretos projetados para clareza operacional. Todos os argumentos textuais ou caminhos de arquivos devem ser envoltos em aspas duplas (`""`).
 
 ## 1. Operações de Arquivo e Criptografia
-DELTA permite criptografar, descriptografar e verificar o hash de arquivos localmente.
+A DELTA permite criptografar, descriptografar e verificar o hash de arquivos localmente.
 
 * **Criptografar Arquivo Único:**
     `encrypt file "dados.txt" with AES256`
