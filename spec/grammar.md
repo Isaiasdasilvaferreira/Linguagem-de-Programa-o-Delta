@@ -1,7 +1,5 @@
 # DELTA: Formal Grammar
 
-A gramática do DELTA é baseada em comandos iniciados por palavras-chave específicas. Abaixo está a representação EBNF.
-
 ## Regras Sintáticas
 
 <Program> ::= <Command>
@@ -35,7 +33,7 @@ A gramática do DELTA é baseada em comandos iniciados por palavras-chave espec�
 ## Terminais Essenciais
 
 <Algorithm>     ::= "AES256" | "SHA256" | "RSA" | "ECC"
-<ChannelParams> ::= { <StringLiteral> }  /* host(...), port(...), cert(...), mutual_tls(...) */
+<ChannelParams> ::= { <StringLiteral> }
 <StringLiteral> ::= "\"" <Text> "\""
 <Identifier>    ::= [a-zA-Z_][a-zA-Z0-9_]*
 <Number>        ::= [0-9]+
