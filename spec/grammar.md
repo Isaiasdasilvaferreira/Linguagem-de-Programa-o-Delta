@@ -1,6 +1,6 @@
 # DELTA: Formal Grammar
 
-A gramática do DELTA é linear e baseada em comandos iniciados por palavras-chave específicas. Abaixo está a representação EBNF deduzida do `parser.rs`.
+A gramática da DELTA é linear e baseada em comandos iniciados por palavras-chave específicas. Abaixo está a representação EBNF deduzida do `parser.rs`.
 
 ## Regras Sintáticas
 
