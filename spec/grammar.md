@@ -2,38 +2,36 @@
 
 ## Regras Sintáticas
 
-<Program> ::= <Command>
+**PROGRAM** ::= **COMMAND**
 
-<Command> ::= <ScanCommand> 
-            | <CryptoCommand> 
-            | <UtilCommand> 
-            | <AssignCommand> 
-            | <SecureCommand>
-            | <FunctionCommand>
+**COMMAND** ::= **SCAN_COMMAND** | **CRYPTO_COMMAND** | **UTIL_COMMAND** | **ASSIGN_COMMAND** | **SECURE_COMMAND**
+            | **FUNCTION_COMMAND**
 
-<ScanCommand> ::= "scan" "network" <StringLiteral>
-                | "scan" "ports" <StringLiteral>
-                | "scan" "files" <StringLiteral> "in" <StringLiteral> ("encrypt" | "decrypt") <Algorithm>
+**SCAN_COMMAND** ::= "scan" "network" **STRING**
+                | "scan" "ports" **STRING**
+                | "scan" "files" **STRING** "in" **STRING** ("encrypt" | "decrypt") **ALGORITHM**
 
-<CryptoCommand> ::= ("encrypt" | "decrypt") "file" <StringLiteral> "with" <Algorithm>
-                  | ("hash" | "verify") "file" <StringLiteral> "with" <Algorithm>
+**CRYPTO_COMMAND** ::= ("encrypt" | "decrypt") "file" **STRING** "with" **ALGORITHM**
+                  | ("hash" | "verify") "file" **STRING** "with" **ALGORITHM**
 
-<AssignCommand> ::= "let" <Identifier> "=" (<StringLiteral> | <Number>)
+**ASSIGN_COMMAND** ::= "let" **IDENTIFIER** "=" (**STRING** | **NUMBER**)
 
-<UtilCommand> ::= "print" <StringLiteral>
-                | "calc" <StringLiteral>
-                | "alert" <StringLiteral>
-                | "log" <StringLiteral>
+**UTIL_COMMAND** ::= "print" **STRING**
+                | "calc" **STRING**
+                | "alert" **STRING**
+                | "log" **STRING**
 
-<SecureCommand> ::= "secure" "data" <StringLiteral>
-                  | "secure" "channel" <StringLiteral> <ChannelParams>
+**SECURE_COMMAND** ::= "secure" "data" **STRING**
+                  | "secure" "channel" **STRING** **PARAMS**
 
-<FunctionCommand> ::= "function" <StringLiteral> "requires" "role(" <Identifier> ")"
+**FUNCTION_COMMAND** ::= "function" **STRING** "requires" "role(" **IDENTIFIER** ")"
+
+---
 
 ## Terminais Essenciais
 
-<Algorithm>     ::= "AES256" | "SHA256" | "RSA" | "ECC"
-<ChannelParams> ::= { <StringLiteral> }
-<StringLiteral> ::= "\"" <Text> "\""
-<Identifier>    ::= [a-zA-Z_][a-zA-Z0-9_]*
-<Number>        ::= [0-9]+
+* **ALGORITHM** ::= "AES256" | "SHA256" | "RSA" | "ECC"
+* **PARAMS** ::= { **STRING** }  *(Ex: host, port, cert)*
+* **STRING** ::= "\"" text "\""
+* **IDENTIFIER** ::= [a-zA-Z_][a-zA-Z0-9_]*
+* **NUMBER** ::= [0-9]+
